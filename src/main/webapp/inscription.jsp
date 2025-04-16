@@ -101,9 +101,9 @@
 <body>
 
 <div class="login-container">
-    <h1>🔐 Connexion</h1>
+    <h1>📝 Inscription</h1>
 
-    <form action="connexion" method="post">
+    <form action="inscription" method="post">
         <label for="nom">Nom :</label>
         <input type="text" name="nom" id="nom" required>
 
@@ -113,7 +113,7 @@
         <label for="motDePasse">Mot de passe :</label>
         <input type="password" name="motDePasse" id="motDePasse" required>
 
-        <input type="submit" value="Se connecter">
+        <input type="submit" value="S'inscrire">
     </form>
 
     <c:if test="${not empty erreur}">
@@ -121,7 +121,7 @@
     </c:if>
 
     <div class="bottom-link">
-        Pas encore inscrit ? <a href="inscription.jsp">Créer un compte</a>
+        Déjà inscrit ? <a href="${pageContext.request.contextPath}/connexion.jsp">Se connecter</a>
     </div>
 </div>
 
